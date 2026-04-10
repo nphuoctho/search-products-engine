@@ -1,0 +1,18 @@
+[project]
+name = "search-engine-baseline"
+version = "0.1.0"
+description = "A baseline search engine implementation with Vietnamese text processing capabilities"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+	"beautifulsoup4>=4.14.3",
+	"fastapi>=0.116.1",
+	"pandas>=3.0.2",
+	"pydantic>=2.12.5",
+	"underthesea>=9.2.11",
+	"unidecode>=1.4.0",
+	"uvicorn>=0.35.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
