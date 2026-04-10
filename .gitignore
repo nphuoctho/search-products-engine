@@ -44,7 +44,7 @@ env/
 htmlcov/
 
 # Project-specific
-data/
+data/index_snapshot.pkl
 *.csv
 output/
 index/
