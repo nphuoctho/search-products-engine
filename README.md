@@ -79,7 +79,7 @@ Example response:
 
 ### 2) Search products
 
-`GET /search?query=<text>&top_k=10`
+`GET /api/v1/search?query=<text>&top_k=10`
 
 Example response:
 
@@ -107,12 +107,19 @@ Example response:
 Centralized in `app/config.py`:
 - `INDEX_SOURCE_PATH` (default: `data/products.csv`)
 - `INDEX_SNAPSHOT_PATH` (default: `data/index_snapshot.pkl`)
+- `API_PREFIX` (default: `/api/v1`)
+- `CORS_ALLOW_ORIGINS` (default: `*`)
+- `CORS_ALLOW_METHODS` (default: `GET`)
+- `CORS_ALLOW_HEADERS` (default: `*`)
+- `CORS_ALLOW_CREDENTIALS` (default: `false`)
 
 Set environment variables before running app:
 
 ```bash
 export INDEX_SOURCE_PATH="data/products.csv"
 export INDEX_SNAPSHOT_PATH="data/index_snapshot.pkl"
+export API_PREFIX="/api/v1"
+export CORS_ALLOW_ORIGINS="http://localhost:3000,http://127.0.0.1:3000"
 uv run uvicorn app.main:app --reload
 ```
 
