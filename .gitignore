@@ -45,6 +45,5 @@ htmlcov/
 
 # Project-specific
 data/index_snapshot.pkl
-*.csv
 output/
-index/
+index/q
