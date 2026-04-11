@@ -27,7 +27,7 @@ RUN mkdir -p /app/persistent \
 	&& chown -R app:app /app/persistent
 
 COPY --from=builder /app/.venv /app/.venv
-COPY --chown=app:app app ./appj
+COPY --chown=app:app app ./app
 COPY --chown=app:app scripts ./scripts
 COPY --chown=app:app data ./data
 
