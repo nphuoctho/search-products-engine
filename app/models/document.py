@@ -12,6 +12,7 @@ class SearchResult(BaseModel):
     score: float
     name: str
     price: str
+    sku: str
     thumbnail_url: str
     specification: str
     dosage_form: str

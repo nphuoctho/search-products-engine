@@ -74,6 +74,7 @@ class SearchEngine:
                     score=round(score, 4),
                     name=meta.get("name", ""),
                     price=meta.get("price", ""),
+                    sku=meta.get("sku", ""),
                     thumbnail_url=meta.get("thumbnail_url", ""),
                     specification=meta.get("specification", ""),
                     dosage_form=meta.get("dosage_form", ""),
