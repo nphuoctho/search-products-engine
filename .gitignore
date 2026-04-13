@@ -47,3 +47,4 @@ htmlcov/
 data/index_snapshot.pkl
 output/
 index/q
+.env
